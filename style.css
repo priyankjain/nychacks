@@ -1,0 +1,65 @@
+h1
+{
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+  text-decoration: italic;
+  font-family: 'Kirang Haerang', cursive;
+  font-size: 80px;
+  animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+
+}
+
+
+p
+{
+  color: whitesmoke;
+  font-size: 20px;
+}
+body {
+  background-image: url("https://images.pexels.com/photos/220326/pexels-photo-220326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    }
+#score {color: blue;}
+select 
+{
+  font-size: 20px;
+  margin: inherit; 
+}
+button {
+  background-color: blue; /* Green */
+  border: none;
+  color: whitesmoke;
+  text-align: center;
+  display: relative;
+  font-size: 20px;
+}
+/* Animations */
+
+@keyframes fade-slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes rotate-up {
+  100% {
+    transform: rotateZ(-4deg);
+  }
+}
+

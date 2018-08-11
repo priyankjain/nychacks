@@ -1,0 +1,14 @@
+h1{
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+  text-decoration: italic;
+  font-family: 'Kirang Haerang', cursive;
+  font-size: 80px;
+  border-bottom-color: rgba(250, 235, 215, 0.24);
+}
+body{}
+body {
+  background-image: url("https://images.pexels.com/photos/220326/pexels-photo-220326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    }
+#score {color: blue;}
