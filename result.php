@@ -25,7 +25,7 @@
 function render_row($row, $category) {
 	?>
     <tr>
-      <th><?php echo $row['INSTNM'];?></th>
+      <th><?php echo "<a href='university.php?id=".$row['UNITID']."'>".$row['INSTNM']."</a>";?></th>
       <td><?php echo $row['CITY'].", ".$row['STABBR'];?></td>
       <td><?php echo ucwords($category);?></td>
       <td><?php 
