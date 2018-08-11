@@ -20,11 +20,11 @@ $conn = new mysqli("localhost", $username, $password, $database);
 if ($conn->connect_error) {
 	die("Connection failed: ". $conn->connect_error);
 }
-$sql = "select * from test;";
+$sql = "select * from university limit 10;";
 $result = $conn->query($sql);
 if($result->num_rows > 0) {
 	while ($row = $result->fetch_assoc()) {
-		echo "name: " . $row["name"] . " city: " . $row["city"] . " state: " . $row["state"] . " zip: " . $row["zip"] . "\n";
+		echo "Name: " . $row["INSTNM"] . "<br/>";
 	}
 } else {
 	echo "0 results";
